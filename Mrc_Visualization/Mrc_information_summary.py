@@ -44,11 +44,7 @@ def get_mrc_header_info(mrc_path):
             header_info.append(f"origin (Origin): {header.origin}")
 
             # 处理 map 字符串
-            if isinstance(header.map, bytes):
-                header_info.append(f"map (Map string): {header.map.decode('utf-8')}")
-            else:
-                header_info.append(f"map (Map string): {header.map}")
-
+            header_info.append(f"map (Map string): {header.map.tobytes().decode('utf-8', 'ignore')}")
             header_info.append(f"machst (Machine stamp): {header.machst}")
             header_info.append(f"rms (RMS deviation): {header.rms}")
             header_info.append(f"nlabl (Number of labels): {header.nlabl}")
