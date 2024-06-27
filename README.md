@@ -1,2 +1,6 @@
 # kexin_tools
-Contains some commonly used tool classes
+这是一个工具类 主要是用作MRC图像的处理
+
+目前的打算是通过标签进行可视化指定数据集 该数据集要求 目前在通过SHREC2021进行可视化
+
+
