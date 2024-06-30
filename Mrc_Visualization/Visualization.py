@@ -151,7 +151,7 @@ save_folder = r'D:\dataset\test_visualization\output'  # 输出文件夹路径
 # 自定义 x, y, z 数值
 custom_x = 100
 custom_y = 150
-custom_z = 200
+custom_z = 100
 
 # 加载图像数据并进行拉伸
 image_data = load_image(image_path)
